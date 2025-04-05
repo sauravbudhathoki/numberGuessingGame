@@ -11,11 +11,20 @@ public class Main {
 
         int guess;
         int attempts = 0;
-        int min =1;
-        int max =100;
-        int randomNumber =random.nextInt(min,max+1);
+        int min;
+        int max;
+
+
+        //int randomNumber =random.nextInt(min,max+1);
 
         System.out.println("Number Guessing Game");
+        System.out.println("Enter the minimum number:");
+        min =scanner.nextInt();
+        System.out.println("Enter the maximum number:");
+        max=scanner.nextInt();
+
+        int randomNumber =random.nextInt(min,max+1);
+
         System.out.printf("Guess a number between %d-%d\n",min,max);
 
         do{
